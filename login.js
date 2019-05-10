@@ -1,3 +1,4 @@
+
 $.validator.setDefaults({
     submitHandler: function() {}
 });
