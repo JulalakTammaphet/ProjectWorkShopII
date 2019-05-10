@@ -5,6 +5,7 @@ $.validator.setDefaults({
 $.validator.methods.equal = function(value, element, param) {
     return value == param;
 };
+//validaor
 $().ready(function() {
     var validator = $("#form").bind("invalid-form.validate", function() {
         $("#summary").html("Your form contains " + validator.numberOfInvalids() + " errors, see details below.");
