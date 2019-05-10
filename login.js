@@ -30,9 +30,9 @@ $().ready(function() {
             }
         },
         messages: {
-            username: {
+            email: {
                 required: "Please enter a email",
-                minlength: "Your username must consist of at least 2 characters"
+                minlength: "Your email must consist of at least 2 characters"
             },
             password: {
                 required: "Please provide a password",
@@ -56,16 +56,17 @@ $().ready(function() {
         }
     });
 });
+$("#login").click(function() {
 
-function authen() {
-    var email = document.getElementById('#email');
-    var password = document.getElementById('#password');
-    if (!email == "admin@nw.com" && !password == "12345**") {
-        console.log('true');
-        console.log("Success");
-        setTimeout(window.location.href = "dashboard.html");
-    } else {
-        console.log('false');
-        $("#err").show();
-    }
-}
+        if (status == 'success') {
+            if($("#email").val() == "admin@nw.com" && $("#password").val() == "12345**"){
+            $("#suc").show();
+            console.log("Success");
+            console.log(data.usesrname);
+            setTimeout(window.location.href = "dashboard.html" );
+            }
+        } else {
+            $("#err").show();
+        
+         }
+});
