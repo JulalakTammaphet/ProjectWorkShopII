@@ -56,13 +56,14 @@ $().ready(function() {
         }
     });
 });
+
 function authen() {
     var email = document.getElementById('#email');
     var password = document.getElementById('#password');
-    if (!email ==  "admin@nw.com" && !password=="12345**") {
+    if (!email == "admin@nw.com" && !password == "12345**") {
         console.log('true');
         console.log("Success");
-            setTimeout(window.location.href = "dashboard.html?");
+        setTimeout(window.location.href = "dashboard.html");
     } else {
         console.log('false');
         $("#err").show();
