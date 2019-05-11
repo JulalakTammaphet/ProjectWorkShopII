@@ -1,5 +1,8 @@
 $(document).ready(function() {
-    $.getJSON("customers.json", function(data) {
+    var url = "http://localhost:3000/customers?";
+    $.get(url, function(data) {
+        console.log(data);
+        
         var customerData = '';
         $.each(data, function(key, value) {
             customerData += '<tr>';
@@ -9,6 +12,7 @@ $(document).ready(function() {
             customerData += '<td>' + value.contactTitle + '</td>';
             customerData += '</tr>';
         });
-        $('#dataTable').append(customer_data);
+        $('#dataTable').append(customerData);
     });
 });
+
