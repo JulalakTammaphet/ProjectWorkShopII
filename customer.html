@@ -250,19 +250,3 @@
 </body>
 
 </html>
-<script>
-    $(document).ready(function() {
-        $.getJSON("customers.json", function(data) {
-            var customer_data = '';
-            $.each(data, function(key, value) {
-                customer_data += '<tr>';
-                customer_data += '<td>' + value.CustomerID + '</td>';
-                customer_data += '<td>' + value.CompanyName + '</td>';
-                customer_data += '<td>' + value.ContactName + '</td>';
-                customer_data += '<td>' + value.ContactTitle + '</td>';
-                customer_data += '</tr>';
-            });
-            $('#dataTable').append(customer_data);
-        });
-    });
-</script>

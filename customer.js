@@ -1,22 +1,14 @@
-// $(function() {
-
-
-//          $.get("data/customers.json", function() {
-//                  console.log(data);
-
-//                 var customers = Search.Search;
-//                 var tablehead = '<tr><th>CustomerID</th><th>CompanyName</th><th>ContactName</th><th>ContactTitle</th></tr>'
-//                 $('#datalist').append(tablehead);
-//                  for (var index in customers) {
-//                       var customer = customers[index];
-//                       var tableRow = '<tr><td>' + customer.CustomerID + '</td><td>' + customer.CompanyName + '</td><td>' + customer.ContactName + '</td><td>' + customer.ContactTitle + '</td></tr>'
-
-
-}
-
-//                   document.getElementById("show").innerHTML = tableRow;
-//                   });
-
-
-
-//           });
+$(document).ready(function() {
+    $.getJSON("customers.json", function(data) {
+        var customerData = '';
+        $.each(data, function(key, value) {
+            customerData += '<tr>';
+            customerData += '<td>' + value.customerID + '</td>';
+            customerData += '<td>' + value.companyName + '</td>';
+            customerData += '<td>' + value.contactName + '</td>';
+            customerData += '<td>' + value.contactTitle + '</td>';
+            customerData += '</tr>';
+        });
+        $('#dataTable').append(customer_data);
+    });
+});
