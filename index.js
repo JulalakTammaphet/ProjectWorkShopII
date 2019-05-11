@@ -25,8 +25,8 @@ $.validator.setDefaults({
 });
 
 $("#login").click(function() {
-    var email = document.getElementById('email');
-    var pwd = document.getElementById('pwd');    
+    var email = document.getElementById('email').value;
+    var pwd = document.getElementById('pwd').value;    
 console.log(email,pwd);
 
             if(email == "admin@nw.com" && pwd== "12345**"){
