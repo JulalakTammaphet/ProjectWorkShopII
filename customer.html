@@ -247,6 +247,14 @@
     <script src="js/demo/datatables-demo.js"></script>
 
     <script src="customer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script type="text/javascript">
+      function create() {
+			    $.cookie('keep', value.customerID);
+			    console.log($.cookie('keep'));
+			}
+    </script>
 </body>
 
 </html>
