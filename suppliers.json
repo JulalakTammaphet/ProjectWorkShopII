@@ -1,5 +1,5 @@
-
-[
+{
+  "suppliers":[
 	{
 		"supplierID" : 4,
 		"companyName" : "Tokyo Traders",
@@ -407,3 +407,4 @@
 		}
 	}
 ]
+}
