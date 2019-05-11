@@ -10,14 +10,13 @@ $(function() {
                     for (var index in customers) {
                         var customer = customers[index];
                         var tableRow = '<tr><td>' + customer.CustomerID + '</td><td>' + customer.CompanyName + '</td><td>' + customer.ContactName + '</td><td>' + customer.ContactTitle + '</td></tr>'
-                        $('#datalist').append(tableRow)
-                        console.log(customer);
+                       
 
+                    }
 
-
-
+                    document.getElementById("show").innerHTML = tableRow;
                     });
 
-                document.getElementById("show").innerHTML = r;
+                
 
             });
