@@ -17,7 +17,11 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-
+    <!-- CDN jquery -->
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <!-- CDN  ajax jquery -->
+    <script src="https://ajax.google.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 
 <body id="page-top">
@@ -158,7 +162,7 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Products</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">77 Item</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800" id="totalProduct" name="totalProduct"></div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-calendar fa-2x text-gray-300"></i>
@@ -484,6 +488,7 @@
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
 
+    <script src="dashboard.js"></script>
 </body>
 
 </html>

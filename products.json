@@ -1,5 +1,5 @@
-
-[
+{
+  "products":[
 	{
 		"productID" : 4,
 		"supplierID" : 2,
@@ -925,3 +925,4 @@
 		"name" : "Original Frankfurter grüne Soße"
 	}
 ]
+}
