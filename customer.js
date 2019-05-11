@@ -10,6 +10,8 @@ $(document).ready(function() {
              +"<td>"+ data[i]["companyName"]+ "</td><td>"+
              data[i]["contactName"]+"</td><td> "
              +data[i]["contactTitle"]+"</td></tr>";
+
+             
              
              
         }  
