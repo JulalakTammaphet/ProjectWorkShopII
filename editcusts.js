@@ -35,31 +35,31 @@ $(document).ready(function () {
                 $("#country").val(data[i].address.country);
                 $("#phone").val(data[i].address.phone);
 
-                // $("#save").click(function () {
-                //     var newuser = {};
-                //    // newuser.id = data.id;
-                //     newuser[i].customerID = $("#customerID").val();
-                //     newuser[i].contactName = $("#contactName").val();
-                //     newuser[i].contactTitle = $("#contactTitle").val();
-                //     newuser[i].address.street = $("#street").val();
-                //     newuser[i].address.city = $("#city").val();
-                //     newuser[i].address.region = $("#region").val();
-                //     newuser[i].address.postalCode = $("#postalCode").val();
-                //     newuser[i].address.country = $("#country").val();
-                //     newuser[i].address.phone = $("#phone").val();
-                //     console.log(JSON.stringify(newuser));
-                //     var updateUrl = "http://localhost:3000/customers/" + data[i].customerID ;
-                //     $.ajax({
-                //         url: updateUrl,
-                //         type: 'PUT',
-                //         data: newuser,
-                //         success: function (result) {
-                //             console.log('Updated!');
-                //         }
-                //     });
-                //     $("#err").show();
-                //     setTimeout(location.reload.bind(location), 900);
-                // });
+                $("#save").click(function () {
+                    var newuser = {};
+                   // newuser.id = data.id;
+                    newuser[i].customerID = $("#customerID").val();
+                    newuser[i].contactName = $("#contactName").val();
+                    newuser[i].contactTitle = $("#contactTitle").val();
+                    newuser[i].address.street = $("#street").val();
+                    newuser[i].address.city = $("#city").val();
+                    newuser[i].address.region = $("#region").val();
+                    newuser[i].address.postalCode = $("#postalCode").val();
+                    newuser[i].address.country = $("#country").val();
+                    newuser[i].address.phone = $("#phone").val();
+                    console.log(JSON.stringify(newuser));
+                    var updateUrl = "http://localhost:3000/customers/" + data[i].customerID ;
+                    $.ajax({
+                        url: updateUrl,
+                        type: 'PUT',
+                        data: newuser,
+                        success: function (result) {
+                            console.log('Updated!');
+                        }
+                    });
+                    $("#err").show();
+                    setTimeout(location.reload.bind(location), 900);
+                });
             }
 
         }
