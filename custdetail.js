@@ -27,10 +27,10 @@ $(document).ready(function() {
         document.getElementById('dataTable').innerHTML = r;
 
        show +="<div class='"+'bg-white py-2 collapse-inner rounded'+"'>"
-             + "<h6 class='"+'collapse-header'+"'>"+"Custom Components:</h6>"
+             + "<h6 class='"+'collapse-header'+"'>"+"Custom Components:</h6>";
                    + "<a class='"+'collapse-item'+"'"+"href='"+'editcust.html?id='+tid+'"'+'>Edit Customer</a>'+
                     +  "<a class='"+'collapse-item'+"'"+"href='"+'custdetail.html"'+'>Detail Customer</a>'+
                     "</div>";
-                    ocument.getElementById('collapseTwo').innerHTML = show;          
+                    document.getElementById('collapseTwo').innerHTML = show;          
     });
 });
